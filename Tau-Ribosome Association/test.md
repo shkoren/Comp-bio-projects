@@ -12,7 +12,9 @@ et al., 2019).  
 
 <center>
 
-\=   
+``` math
+InterfaceIndex = \displaystyle \frac{{\sum AA}_{rRNA}}{\sum(AA_{rRNA}+AA_{water})}
+```
 
 </center>
 
@@ -101,3 +103,12 @@ However, in doing so we reveal that the enhanced association of tau with
 RPs also does not correlate with structural position in the ribosome.
 This supports tau binding to RPs while not incorporated into the full
 ribosomes.
+
+References: 1. Hsieh, Y.-C. et al. Tau-Mediated Disruption of the
+Spliceosome Triggers Cryptic RNA Splicing and Neurodegeneration in
+Alzheimer’s Disease. Cell Rep 29, 301-316.e10 (2019). 2. Natchiar, S.
+K., Myasnikov, A. G., Kratzat, H., Hazemann, I. & Klaholz, B. P.
+Visualization of chemical modifications in the human 80S ribosome
+structure. Nature 551, 472–477 (2017). 3. Shigeoka, T. et al. On-Site
+Ribosome Remodeling by Locally Synthesized Ribosomal Proteins in Axons.
+Cell Rep 29, 3605-3619.e10 (2019).
