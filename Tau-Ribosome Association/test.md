@@ -12,7 +12,7 @@ et al., 2019).  
 
 <center>
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=InterfaceIndex+%3D+%5Cdisplaystyle+%5Cfrac%7B%7B%5Csum+AA%7D_%7BrRNA%7D%7D%7B%5Csum%28AA_%7BrRNA%7D%2BAA_%7Bwater%7D%29%7D)
+![equation](http://www.sciweavers.org/tex2img.php?eq=InterfaceIndex%20%3D%20%5Cdisplaystyle%20%5Cfrac%7B%7B%5Csum%20AA%7D_%7BrRNA%7D%7D%7B%5Csum%28AA_%7BrRNA%7D%2BAA_%7Bwater%7D%29%7D&bc=White&fc=Black&im=png&fs=12&ff=modern&edit=0)
 
 \(InterfaceIndex = \displaystyle \frac{{\sum AA}_{rRNA}}{\sum(AA_{rRNA}+AA_{water})}\)
 
