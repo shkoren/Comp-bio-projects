@@ -2,6 +2,7 @@ Relationship between ribosomal protein position and tau association in
 Alzheimer’s disease
 ================
 Shon Koren
+August 10th, 2020
 
 This is code demonstrating the relationship between human ribosomal
 protein (RP) structural position and association with the microtubule
@@ -22,8 +23,8 @@ AA}\_{rRNA}}{\\sum(AA\_{rRNA}+AA\_{water})}](https://latex.codecogs.com/png.late
 Internal RP proteins have more AA interfacing with rRNA than water
 resulting in a higher Interface Index. A common cutoff for RP structural
 position is 0.60 (Shigeoka et al., 2019). Plotting for the relative
-frequency of RP interface indices reveals most RPs are external rather
-than internal, as expected.
+frequency of RP interface indices (Fig. 1) reveals most RPs are external
+rather than internal, as expected.
 
 <img src="test_tex_files/figure-gfm/unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
 
@@ -39,8 +40,9 @@ roughly 50 out of 80 potential RPs.
 As noted by the Hsieh et al., 2019 study among many others including
 from the Abisambra lab, tau basally associates with RPs. When we plot
 the data from Hsieh 2019, we see that translational or ribosomal
-proteins are highly enriched (log2 FC \> 2) in AD over control samples,
-suggesting that tau has enhanced association with RPs in AD.
+proteins are highly enriched (log2 FC \> 2) in AD over control samples
+(Fig. 2). This suggests that tau has enhanced association with RPs in
+AD, as noted by other studies.
 
 <img src="test_tex_files/figure-gfm/unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
 
@@ -73,7 +75,7 @@ Since the p value of the two-sample K-S test \> 0.05, the two
 distributions of ribosomal structural position (external, II \< 0.60 and
 internal, II \> 0.60) are not independent, suggesting tau associates
 with RPs regardless of their position in ribosomes. This is more easily
-interpreted when plotted:
+interpreted when plotted in (Fig. 3):
 
 <img src="test_tex_files/figure-gfm/unnamed-chunk-6-1.png" style="display: block; margin: auto;" />
 
@@ -89,7 +91,8 @@ whether tau associates with RPs more in AD as a product of their
 structural position given what is known about tau’s mislocalization and
 ribosome dysfunction in disease. We can repeat our statistical analysis
 comparing the distribution of external (\<0.60 II) or internal (\>0.60
-II) RPs associating with tau in AD (AD-CT FoldChange):
+II) RPs associating with tau in AD over in control brain samples (Fig.
+4):
 
     ## 
     ##  Two-sample Kolmogorov-Smirnov test
@@ -104,11 +107,11 @@ RPs also does not correlate with structural position in the ribosome.
 This supports tau binding to RPs while not incorporated into the full
 ribosomes.
 
-References: 1. Hsieh, Y.-C. et al. Tau-Mediated Disruption of the
+<br> References: 1.Hsieh, Y.-C. et al. Tau-Mediated Disruption of the
 Spliceosome Triggers Cryptic RNA Splicing and Neurodegeneration in
-Alzheimer’s Disease. Cell Rep 29, 301-316.e10 (2019). 2. Natchiar, S.
-K., Myasnikov, A. G., Kratzat, H., Hazemann, I. & Klaholz, B. P.
+Alzheimer’s Disease. Cell Rep 29, 301-316.e10 (2019). 2.Natchiar, S. K.,
+Myasnikov, A. G., Kratzat, H., Hazemann, I. & Klaholz, B. P.
 Visualization of chemical modifications in the human 80S ribosome
-structure. Nature 551, 472–477 (2017). 3. Shigeoka, T. et al. On-Site
+structure. Nature 551, 472–477 (2017). 3.Shigeoka, T. et al. On-Site
 Ribosome Remodeling by Locally Synthesized Ribosomal Proteins in Axons.
 Cell Rep 29, 3605-3619.e10 (2019).
