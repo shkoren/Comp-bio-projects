@@ -12,18 +12,20 @@ et al., 2019).  
 
 <center>
 
-\[InterfaceIndex = \displaystyle \frac{{\sum AA}_{rRNA}}{\sum(AA_{rRNA}+AA_{water})}\]
+  
+![InterfaceIndex = \\displaystyle \\frac{{\\sum
+AA}\_{rRNA}}{\\sum(AA\_{rRNA}+AA\_{water})}](https://latex.codecogs.com/png.latex?InterfaceIndex%20%3D%20%5Cdisplaystyle%20%5Cfrac%7B%7B%5Csum%20AA%7D_%7BrRNA%7D%7D%7B%5Csum%28AA_%7BrRNA%7D%2BAA_%7Bwater%7D%29%7D
+"InterfaceIndex = \\displaystyle \\frac{{\\sum AA}_{rRNA}}{\\sum(AA_{rRNA}+AA_{water})}")  
 
 </center>
 
 Internal RP proteins have more AA interfacing with rRNA than water
 resulting in a higher Interface Index. A common cutoff for RP structural
-position is 0.60 (Shigeoka et al., 2019).
+position is 0.60 (Shigeoka et al., 2019). Plotting for the relative
+frequency of RP interface indices reveals most RPs are external rather
+than internal, as expected.
 
-  Plotting for the relative frequency of RP interface indices reveals
-most RPs are external rather than internal, as expected.  
-
-<img src="test_tex_files/figure-gfm/unnamed-chunk-2-1.png" style="display: block; margin: auto;" />
+<img src="test_tex_files/figure-gfm/unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
 
 Next, load the data from Hsieh et al., 2019 which used label free
 quantification mass spectrometry (LFQ MS) to investigate the tau
@@ -40,7 +42,7 @@ the data from Hsieh 2019, we see that translational or ribosomal
 proteins are highly enriched (log2 FC \> 2) in AD over control samples,
 suggesting that tau has enhanced association with RPs in AD.
 
-<img src="test_tex_files/figure-gfm/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
+<img src="test_tex_files/figure-gfm/unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
 
 There are two main possibilities dictating tau-RP association ignoring
 the association of tau to rRNA or other RNA: 1. Tau binds to
@@ -73,7 +75,7 @@ internal, II \> 0.60) are not independent, suggesting tau associates
 with RPs regardless of their position in ribosomes. This is more easily
 interpreted when plotted:
 
-<img src="test_tex_files/figure-gfm/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
+<img src="test_tex_files/figure-gfm/unnamed-chunk-6-1.png" style="display: block; margin: auto;" />
 
 This analysis reveals that tau associates with RPs regardless of their
 structural position. This suggests that (1) is true, tau associates with
@@ -96,7 +98,7 @@ II) RPs associating with tau in AD (AD-CT FoldChange):
     ## D = 0.38235, p-value = 0.2952
     ## alternative hypothesis: two-sided
 
-<img src="test_tex_files/figure-gfm/unnamed-chunk-8-1.png" style="display: block; margin: auto;" />
+<img src="test_tex_files/figure-gfm/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
 However, in doing so we reveal that the enhanced association of tau with
 RPs also does not correlate with structural position in the ribosome.
 This supports tau binding to RPs while not incorporated into the full

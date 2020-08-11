@@ -2,7 +2,8 @@
 title: "Relationship between ribosomal protein position and tau association in Alzheimer's disease"
 author: "Shon Koren"
 output:
-  github_document
+  github_document:
+        pandoc_args: --webtex
 indent: no
 ---
 
@@ -16,9 +17,9 @@ This is code demonstrating the relationship between human ribosomal protein (RP)
 $$InterfaceIndex = \displaystyle \frac{{\sum AA}_{rRNA}}{\sum(AA_{rRNA}+AA_{water})}$$
 </center>
 
-Internal RP proteins have more AA interfacing with rRNA than water resulting in a higher Interface Index. A common cutoff for RP structural position is 0.60 (Shigeoka et al., 2019).
+Internal RP proteins have more AA interfacing with rRNA than water resulting in a higher Interface Index. A common cutoff for RP structural position is 0.60 (Shigeoka et al., 2019). Plotting for the relative frequency of RP interface indices reveals most RPs are external rather than internal, as expected.
 
-```{r echo=FALSE, warning = FALSE, error = FALSE, message=FALSE}
+```{r echo=FALSE, warning = FALSE, error = FALSE, message=FALSE, fig.align = 'center'}
 #Initializing data and packages
 library(ggplot2)
 library(dplyr)
@@ -29,13 +30,7 @@ options(scipen = 999) #Turn off sci-notation
 rpf = 'RP.full.csv'
 rp.full = as.data.frame(read.csv(rpf, as.is=TRUE,header=TRUE,sep=',', check.names=FALSE, fileEncoding="UTF-8-BOM"))
 colnames(rp.full)[1] = 'Symbol'
-```
 
-&nbsp;
-Plotting for the relative frequency of RP interface indices reveals most RPs are external rather than internal, as expected.
-&nbsp;
-
-```{r echo=FALSE, eval=TRUE, warning = FALSE, error = FALSE, fig.align = 'center'}
 ggplot(data = rp.full) + geom_histogram(aes(x = Interface, y = stat(count) / sum(count)), binwidth = .05) + xlab("Interface Index of RPs") + ggtitle("Figure 1: Relative frequency of human RP Interface Index") +
   ylab("Relative Frequency") + geom_vline(xintercept = 0.60, color = "red", linetype = "dashed", size = 2) + scale_x_continuous(limits = c(0, 1)) +
   scale_y_continuous(limits = c(0, .15))
@@ -108,7 +103,7 @@ p2 = ggstatsplot::ggscatterstats(
   results.subtitle = FALSE,
   marginal = FALSE,
   conf.level = 0,
-  title = "Figure 3: Relationship between RP Interface Index and tau association in Control brain",
+  title = "Figure 3: Relationship between RP Interface Index and tau association",
   caption = "RP interface data from Natchiar et al., 2017, Shigeoka et al., 2019\nTau-IP data from Hsieh et al., 2019",
   bf.message = FALSE,
   centrality.parameter = "none"
