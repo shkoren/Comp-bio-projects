@@ -51,9 +51,11 @@ all RPs.
 ## RP structural position and association with tau in control, non-demented brain samples are not related
 
 There are two main possibilities dictating tau-RP association ignoring
-the association of tau to rRNA or other RNA: 1. Tau binds to
-extra-ribosomal proteins more than RPs in stable ribosomes, or 2. Tau
-binds to RPs incorporated within ribosomes
+the association of tau to rRNA or other RNA:
+
+1.  Tau binds to extra-ribosomal proteins more than RPs in stable
+    ribosomes, or  
+2.  Tau binds to RPs incorporated within ribosomes
 
 If **(1)** is true, then tau would likely not favor any internal or
 external RP. If **(2)** is true, tau would likely favor association with
@@ -107,7 +109,7 @@ RPs associating with tau in AD over in control brain samples (**Fig.
     ## 
     ##  Two-sample Kolmogorov-Smirnov test
     ## 
-    ## data:  rp.filt.in$CTmean and rp.filt.ex$CTmean
+    ## data:  rp.filt.in$AD.CT.FC and rp.filt.ex$AD.CT.FC
     ## D = 0.38235, p-value = 0.2952
     ## alternative hypothesis: two-sided
 
