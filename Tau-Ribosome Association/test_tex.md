@@ -11,14 +11,10 @@ associated protein tau. RP structurual position is based on an
 interfacing with either rRNA or water (Natchiar et al., 2017, Shigeoka
 et al., 2019).  
 
-<center>
-
   
 ![InterfaceIndex = \\displaystyle \\frac{{\\sum
 AA}\_{rRNA}}{\\sum(AA\_{rRNA}+AA\_{water})}](https://latex.codecogs.com/png.latex?InterfaceIndex%20%3D%20%5Cdisplaystyle%20%5Cfrac%7B%7B%5Csum%20AA%7D_%7BrRNA%7D%7D%7B%5Csum%28AA_%7BrRNA%7D%2BAA_%7Bwater%7D%29%7D
 "InterfaceIndex = \\displaystyle \\frac{{\\sum AA}_{rRNA}}{\\sum(AA_{rRNA}+AA_{water})}")  
-
-</center>
 
 Internal RP proteins have more AA interfacing with rRNA than water
 resulting in a higher Interface Index. A common cutoff for RP structural
@@ -107,15 +103,11 @@ RPs also does not correlate with structural position in the ribosome.
 This supports tau binding to RPs while not incorporated into the full
 ribosomes.
 
-References:
-
-1.Hsieh, Y.-C. et al. Tau-Mediated Disruption of the Spliceosome
-Triggers Cryptic RNA Splicing and Neurodegeneration in Alzheimer’s
-Disease. Cell Rep 29, 301-316.e10 (2019).
-
-2.Natchiar, S. K., Myasnikov, A. G., Kratzat, H., Hazemann, I. &
-Klaholz, B. P. Visualization of chemical modifications in the human 80S
-ribosome structure. Nature 551, 472–477 (2017).
-
-3.Shigeoka, T. et al. On-Site Ribosome Remodeling by Locally Synthesized
-Ribosomal Proteins in Axons. Cell Rep 29, 3605-3619.e10 (2019).
+  References: 1.Hsieh, Y.-C. et al. Tau-Mediated Disruption of the
+Spliceosome Triggers Cryptic RNA Splicing and Neurodegeneration in
+Alzheimer’s Disease. Cell Rep 29, 301-316.e10 (2019). 2.Natchiar, S. K.,
+Myasnikov, A. G., Kratzat, H., Hazemann, I. & Klaholz, B. P.
+Visualization of chemical modifications in the human 80S ribosome
+structure. Nature 551, 472–477 (2017). 3.Shigeoka, T. et al. On-Site
+Ribosome Remodeling by Locally Synthesized Ribosomal Proteins in Axons.
+Cell Rep 29, 3605-3619.e10 (2019).
