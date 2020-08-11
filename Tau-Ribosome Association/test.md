@@ -11,7 +11,7 @@ et al., 2019).  
 
 <center>
 
-\(Interface Index = \displaystyle \frac{{\sum AA}_{rRNA}}{\sum(AA_{rRNA}+AA_{water})}\)
+\[Interface Index = \displaystyle \frac{{\sum AA}_{rRNA}}{\sum(AA_{rRNA}+AA_{water})}\]
 
 </center>
 
@@ -58,17 +58,6 @@ The two-sample K-S test can then be used to test whether the tau
 association of RPs in AD are independent of their structural position in
 the ribosome:
 
-``` r
-ff = 'RP.interface.csv'
-rp = as.data.frame(read.csv(ff, as.is=TRUE,header=TRUE,sep=',', check.names=FALSE, fileEncoding = "UTF-8-BOM"))
-colnames(rp)[1] = 'Symbol'
-colnames(rp)[3] = 'AD.CT.FC'
-
-rp.filt.in = rp %>% filter(Interface > .6)
-rp.filt.ex = rp %>% filter(Interface < .6)
-ks.test(rp.filt.in$AD.CT.FC, rp.filt.ex$AD.CT.FC)
-```
-
     ## 
     ##  Two-sample Kolmogorov-Smirnov test
     ## 
@@ -79,29 +68,6 @@ ks.test(rp.filt.in$AD.CT.FC, rp.filt.ex$AD.CT.FC)
 Since the p value of the two-sample K-S test \> 0.05, ribosomal
 structural position does not correlate with whether RPs associate with
 tau more in AD. This is more easily viewed when plotted:
-
-``` r
-p1 = ggstatsplot::ggscatterstats(
-  data = rp,
-  x = Interface,
-  y = AD.CT.FC,
-  type = "np",
-  xlab = "RP Interface Index\nHigher = Interior",
-  ylab = "Tau-IP Intensity AD-CT (log2 FC)",
-  label.var = Symbol,
-  label.expression = pval > 1.3,
-  results.subtitle = FALSE,
-  marginal = FALSE,
-  conf.level = 0,
-  title = "Relationship between RP interface index and tau association",
-  subtitle = "External RPs (Interface Index < 0.60) do not associate with tau greater than internal RPs:
-  Two-sample Kolmogorov-Smirnov test: D = 0.38235, p-value = 0.2952",
-  caption = "RP interface data from Natchiar et al., 2017, Shigeoka et al., 2019\nTau-IP data from Hsieh et al., 2019",
-  bf.message = FALSE,
-  centrality.parameter = "none"
-)
-p1 + geom_vline(xintercept = 0.60, color = "red", linetype = "dashed", size = 1)
-```
 
 <img src="test_files/figure-gfm/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
 
