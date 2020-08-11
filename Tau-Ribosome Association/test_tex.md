@@ -1,7 +1,7 @@
 Relationship between ribosomal protein position and tau association in
 Alzheimer’s disease
 ================
-Shon Koren
+Shon A. Koren
 August 10th, 2020
 
 This is code demonstrating the relationship between human ribosomal
@@ -101,7 +101,7 @@ II) RPs associating with tau in AD over in control brain samples (Fig.
 However, in doing so we reveal that the enhanced association of tau with
 RPs also does not correlate with structural position in the ribosome.
 This supports tau binding to RPs while not incorporated into the full
-ribosomes.\\
+ribosomes.  
 
 References:
 
