@@ -4,25 +4,36 @@ Alzheimer’s disease
 Shon A. Koren
 August 10th, 2020
 
+## Introduction
+
 This is code demonstrating the relationship between human ribosomal
 protein (RP) structural position and association with the microtubule
-associated protein tau. RP structurual position is based on an
-“Interface Index” algorithm based on the number of amino acids (AA)
-interfacing with either rRNA or water (Natchiar et al., 2017, Shigeoka
-et al., 2019).  
+associated protein (MAP) tau. Despite its canonical role as a MAP,
+recent studies have illustrated its role in RNA metabolism and protein
+synthesis. To assess properties of RPs associated with tau, we can use
+the “Interface Index” algorithm based on the number of amino acids (AA)
+interfacing with either rRNA or water for each RP (Natchiar et al.,
+2017, Shigeoka et al., 2019).
 
   
 ![InterfaceIndex = \\displaystyle \\frac{{\\sum
 AA}\_{rRNA}}{\\sum(AA\_{rRNA}+AA\_{water})}](https://latex.codecogs.com/png.latex?InterfaceIndex%20%3D%20%5Cdisplaystyle%20%5Cfrac%7B%7B%5Csum%20AA%7D_%7BrRNA%7D%7D%7B%5Csum%28AA_%7BrRNA%7D%2BAA_%7Bwater%7D%29%7D
 "InterfaceIndex = \\displaystyle \\frac{{\\sum AA}_{rRNA}}{\\sum(AA_{rRNA}+AA_{water})}")  
+We can therefore couple this index with quantitiative measurements of
+RP-tau association from mass spectrometry (MS) studies of the tau
+interactome in human brains.
+
+## Most RPs are external, but a defined core of internal RPs exist.
 
 Internal RP proteins have more AA interfacing with rRNA than water
 resulting in a higher Interface Index. A common cutoff for RP structural
 position is 0.60 (Shigeoka et al., 2019). Plotting for the relative
 frequency of RP interface indices (Fig. 1) reveals most RPs are external
-rather than internal, as expected.
+rather than internal.
 
 <img src="test_tex_files/figure-gfm/unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
+
+## Tau interactome data from human brain shows high RP association
 
 Next, load the data from Hsieh et al., 2019 which used label free
 quantification mass spectrometry (LFQ MS) to investigate the tau
@@ -41,6 +52,8 @@ proteins are highly enriched (log2 FC \> 2) in AD over control samples
 AD, as noted by other studies.
 
 <img src="test_tex_files/figure-gfm/unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
+
+## RP structural position and association with tau in control, non-demented brain samples are not related
 
 There are two main possibilities dictating tau-RP association ignoring
 the association of tau to rRNA or other RNA: 1. Tau binds to
@@ -82,6 +95,8 @@ factors such as RP-rRNA binding or tau’s role in nucleolar activity,
 rDNA transcription, and ribosome biogenesis can also factor into tau-RP
 binding.
 
+## RP structural position and tau association in AD is also unrelated, despite significantly higher tau-RP association
+
 Considering that tau associates with RPs more in AD, we can investigate
 whether tau associates with RPs more in AD as a product of their
 structural position given what is known about tau’s mislocalization and
@@ -98,18 +113,20 @@ II) RPs associating with tau in AD over in control brain samples (Fig.
     ## alternative hypothesis: two-sided
 
 <img src="test_tex_files/figure-gfm/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
+
 However, in doing so we reveal that the enhanced association of tau with
 RPs also does not correlate with structural position in the ribosome.
 This supports tau binding to RPs while not incorporated into the full
 ribosomes.  
 
-References:
+## References:
 
-1.Hsieh, Y.-C. et al. Tau-Mediated Disruption of the Spliceosome
-Triggers Cryptic RNA Splicing and Neurodegeneration in Alzheimer’s
-Disease. Cell Rep 29, 301-316.e10 (2019).  
-2.Natchiar, S. K., Myasnikov, A. G., Kratzat, H., Hazemann, I. &
-Klaholz, B. P. Visualization of chemical modifications in the human 80S
-ribosome structure. Nature 551, 472–477 (2017).  
-3.Shigeoka, T. et al. On-Site Ribosome Remodeling by Locally Synthesized
-Ribosomal Proteins in Axons. Cell Rep 29, 3605-3619.e10 (2019).
+1.  Hsieh, Y.-C. et al. Tau-Mediated Disruption of the Spliceosome
+    Triggers Cryptic RNA Splicing and Neurodegeneration in Alzheimer’s
+    Disease. Cell Rep 29, 301-316.e10 (2019).  
+2.  Natchiar, S. K., Myasnikov, A. G., Kratzat, H., Hazemann, I. &
+    Klaholz, B. P. Visualization of chemical modifications in the human
+    80S ribosome structure. Nature 551, 472–477 (2017).  
+3.  Shigeoka, T. et al. On-Site Ribosome Remodeling by Locally
+    Synthesized Ribosomal Proteins in Axons. Cell Rep 29, 3605-3619.e10
+    (2019).
