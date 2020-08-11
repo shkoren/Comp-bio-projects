@@ -2,7 +2,8 @@
 title: "Relationship between ribosomal protein position and tau association in Alzheimer's disease"
 author: "Shon Koren"
 output:
-  github_document
+  github_document:
+    pandoc_args: --webtex
 indent: no
 ---
 
@@ -13,9 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 This is code demonstrating the relationship between human ribosomal protein (RP) structural position and association with the microtubule associated protein tau. RP structurual position is based on an "Interface Index" algorithm based on the number of amino acids (AA) interfacing with either rRNA or water (Natchiar et al., 2017, Shigeoka et al., 2019).
 &nbsp;
 <center>
-![equation](http://www.sciweavers.org/tex2img.php?eq=InterfaceIndex%20%3D%20%5Cdisplaystyle%20%5Cfrac%7B%7B%5Csum%20AA%7D_%7BrRNA%7D%7D%7B%5Csum%28AA_%7BrRNA%7D%2BAA_%7Bwater%7D%29%7D&bc=White&fc=Black&im=png&fs=12&ff=modern&edit=0)
-
-$InterfaceIndex = \displaystyle \frac{{\sum AA}_{rRNA}}{\sum(AA_{rRNA}+AA_{water})}$
+$$InterfaceIndex = \displaystyle \frac{{\sum AA}_{rRNA}}{\sum(AA_{rRNA}+AA_{water})}$$
 </center>
 
 Internal RP proteins have more AA interfacing with rRNA than water resulting in a higher Interface Index. A common cutoff for RP structural position is 0.60 (Shigeoka et al., 2019).
