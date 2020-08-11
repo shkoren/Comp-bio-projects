@@ -41,7 +41,7 @@ ggplot(data = rp.full) + geom_histogram(aes(x = Interface, y = stat(count) / sum
 
 ## Tau interactome data from human brain shows high RP association
 
-The most robust investigation of the tau interactome from human brain in AD was recently published (Hsieh et al., 2019). This study used label free quantification mass spectrometry (LFQ MS) to investigate the tau interactome when immunoprecipitated from human postmortem brain tissue. Similar to other earlier studies, Hsieh et al noted that tau associates with many RP and translational proteins and this association is enhanced in AD (**Fig. 2**). However, not all RPs (of roughly 80) were found due to limitations in MS depth, limiting analysis to roughly half (41) of all RPs.
+The most robust investigation of the tau interactome from human brain in AD was recently published (Hsieh et al., 2019). This study used label free quantification mass spectrometry (LFQ MS) to investigate the tau interactome when immunoprecipitated from human postmortem brain tissue. Similar to other earlier studies, Hsieh et al noted that tau associates with many RP and translational proteins and this association is enhanced in AD (**Fig. 2**). However, not all RPs were found due to limitations in MS depth, limiting analysis to roughly half (41) of all RPs.
 
 ```{r echo=FALSE, warning = FALSE, error = FALSE, message=FALSE}
 h19f = "Hsieh2019.csv"

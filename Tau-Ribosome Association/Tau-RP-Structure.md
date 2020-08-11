@@ -32,7 +32,7 @@ position is 0.60 (Shigeoka et al., 2019). Plotting for the relative
 frequency of RP interface indices (**Fig. 1**) reveals most RPs are
 external rather than internal, but roughly 30% of RPs reside internally.
 
-<img src="test_tex_files/figure-gfm/unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
+<img src="Tau-RP-Structure_files/figure-gfm/unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
 
 ## Tau interactome data from human brain shows high RP association
 
@@ -42,11 +42,10 @@ free quantification mass spectrometry (LFQ MS) to investigate the tau
 interactome when immunoprecipitated from human postmortem brain tissue.
 Similar to other earlier studies, Hsieh et al noted that tau associates
 with many RP and translational proteins and this association is enhanced
-in AD (**Fig. 2**). However, not all RPs (of roughly 80) were found due
-to limitations in MS depth, limiting analysis to roughly half (41) of
-all RPs.
+in AD (**Fig. 2**). However, not all RPs were found due to limitations
+in MS depth, limiting analysis to roughly half (41) of all RPs.
 
-![](test_tex_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![](Tau-RP-Structure_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
 ## RP structural position and association with tau in control, non-demented brain samples are not related
 
@@ -86,7 +85,7 @@ distributions of ribosomal structural position (external, ![II
 regardless of their position in ribosomes. This is more easily
 interpreted when plotted in (**Fig. 3**):
 
-<img src="test_tex_files/figure-gfm/unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
+<img src="Tau-RP-Structure_files/figure-gfm/unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
 
 As tau associates with RPs regardless of their structural position,
 **(2)** is likely false, tau does not associate more with external RPs
@@ -113,7 +112,7 @@ RPs associating with tau in AD over in control brain samples (**Fig.
     ## D = 0.38235, p-value = 0.2952
     ## alternative hypothesis: two-sided
 
-<img src="test_tex_files/figure-gfm/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
+<img src="Tau-RP-Structure_files/figure-gfm/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
 
 However, similar to in control samples, the increase in tau-RP
 association in AD does not depend on structural position in the
