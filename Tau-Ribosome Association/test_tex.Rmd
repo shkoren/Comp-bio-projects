@@ -67,9 +67,9 @@ ggstatsplot::ggbetweenstats(
 
 ## RP structural position and association with tau in control, non-demented brain samples are not related
 
-There are two main possibilities dictating tau-RP association ignoring the association of tau to rRNA or other RNA:
-1. Tau binds to extra-ribosomal proteins more than RPs in stable ribosomes, or
-2. Tau binds to RPs incorporated within ribosomes
+There are two main possibilities dictating tau-RP association ignoring the association of tau to rRNA or other RNA:\
+1. Tau binds to extra-ribosomal proteins more than RPs in stable ribosomes, or\
+2. Tau binds to RPs incorporated within ribosomes\
 
 If **(1)** is true, then tau would likely not favor any internal or external RP. If **(2)** is true, tau would likely favor association with external RPs over more internal RPs.
 
@@ -115,7 +115,7 @@ As tau associates with RPs regardless of their structural position, **(2)** is l
 
 Considering that tau associates with RPs more in AD, we can investigate whether tau associates with RPs more in AD as a product of their structural position given what is known about tau's mislocalization and ribosome dysfunction in disease. We can repeat our statistical analysis comparing the distribution of external ($II <0.60$) or internal ($II >0.60$) RPs associating with tau in AD over in control brain samples (**Fig. 4**):
 ```{r echo=FALSE, warning = FALSE, error = FALSE, message=FALSE,  fig.align = 'center'}
-ks.test(rp.filt.in$CTmean, rp.filt.ex$CTmean)
+ks.test(rp.filt.in$AD.CT.FC, rp.filt.ex$AD.CT.FC)
 
 p1 = ggstatsplot::ggscatterstats(
   data = rp,
