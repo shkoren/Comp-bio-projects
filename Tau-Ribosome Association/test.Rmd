@@ -2,7 +2,7 @@
 title: "Relationship between ribosomal protein position and tau association in Alzheimer's disease"
 author: "Shon Koren"
 output:
-  github_document
+  html_document
 indent: no
 ---
 
