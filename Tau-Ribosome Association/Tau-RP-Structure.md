@@ -30,7 +30,7 @@ Internal RP proteins have more AA interfacing with rRNA than water
 resulting in a higher Interface Index. A common cutoff for RP structural
 position is 0.60 (Shigeoka et al., 2019). Plotting for the relative
 frequency of RP interface indices (**Fig. 1**) reveals most RPs are
-external rather than internal, but roughly 30% of RPs reside internally.
+external rather than internal, but roughly 20% of RPs reside internally.
 
 <img src="Tau-RP-Structure_files/figure-gfm/unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
 
