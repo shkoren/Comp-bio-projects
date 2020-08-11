@@ -101,9 +101,8 @@ II) RPs associating with tau in AD over in control brain samples (Fig.
 However, in doing so we reveal that the enhanced association of tau with
 RPs also does not correlate with structural position in the ribosome.
 This supports tau binding to RPs while not incorporated into the full
-ribosomes.
+ribosomes.\\
 
-  
 References:
 
 1.Hsieh, Y.-C. et al. Tau-Mediated Disruption of the Spliceosome

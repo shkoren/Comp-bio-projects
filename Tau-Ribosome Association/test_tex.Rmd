@@ -140,9 +140,8 @@ p1 = ggstatsplot::ggscatterstats(
 p1 + geom_vline(xintercept = 0.60, color = "red", linetype = "dashed", size = 1)
 
 ```
-However, in doing so we reveal that the enhanced association of tau with RPs also does not correlate with structural position in the ribosome. This supports tau binding to RPs while not incorporated into the full ribosomes.
+However, in doing so we reveal that the enhanced association of tau with RPs also does not correlate with structural position in the ribosome. This supports tau binding to RPs while not incorporated into the full ribosomes.\\
 
-\
 References: 
 
 1.Hsieh, Y.-C. et al. Tau-Mediated Disruption of the Spliceosome Triggers Cryptic RNA Splicing and Neurodegeneration in Alzheimer’s Disease. Cell Rep 29, 301-316.e10 (2019).\
