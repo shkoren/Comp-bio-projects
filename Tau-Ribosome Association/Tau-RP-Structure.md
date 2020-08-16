@@ -14,15 +14,19 @@ of tau in (dys)regulating RNA metabolism and protein synthesis (Koren et
 al., 2020), but little is known about why and how tau associates with
 RPs. To evaluate one potential guiding principle for tau associating
 with RPs, we can evaluate the structural position (internal or external)
-of any specific RP by the Interface Index (*I**I*). The *I**I* measures
-the number of amino acids (AA) an RP interfaces water and rRNA,
-suggesting an internal and external position, respectively (Natchiar et
-al., 2017, Shigeoka et al., 2019).
+of any specific RP by the Interface Index
+(![II](https://latex.codecogs.com/png.latex?II "II")). The
+![II](https://latex.codecogs.com/png.latex?II "II") measures the number
+of amino acids (AA) an RP interfaces water and rRNA, suggesting an
+internal and external position, respectively (Natchiar et al., 2017,
+Shigeoka et al., 2019).
 
-$$InterfaceIndex = \\displaystyle \\frac{{\\sum AA}\_{rRNA}}{\\sum(AA\_{rRNA}+AA\_{water})}$$
-We can couple the *I**I* of any specific RP to its association with tau
-based on immunoprecipitation-coupled mass spectrometry (IP-MS) studies
-in the human brain to evaluate any potential bias of association.
+![InterfaceIndex = \\displaystyle \\frac{{\\sum AA}\_{rRNA}}{\\sum(AA\_{rRNA}+AA\_{water})}](https://latex.codecogs.com/png.latex?InterfaceIndex%20%3D%20%5Cdisplaystyle%20%5Cfrac%7B%7B%5Csum%20AA%7D_%7BrRNA%7D%7D%7B%5Csum%28AA_%7BrRNA%7D%2BAA_%7Bwater%7D%29%7D "InterfaceIndex = \displaystyle \frac{{\sum AA}_{rRNA}}{\sum(AA_{rRNA}+AA_{water})}")
+
+We can couple the ![II](https://latex.codecogs.com/png.latex?II "II") of
+any specific RP to its association with tau based on
+immunoprecipitation-coupled mass spectrometry (IP-MS) studies in the
+human brain to evaluate any potential bias of association.
 
 Most RPs are external, but a defined core of internal RPs exist.
 ----------------------------------------------------------------
@@ -108,13 +112,16 @@ of RPs is independent of their structural position in the ribosome:
 
 Since the *p* value of the two-sample K-S test &gt; 0.05, tau-RP
 association grouped based on their ribosomal structural position
-(external, *I**I* &lt; 0.60 and internal, *I**I* &gt; 0.60) are not
-independent. This suggests that tau associates with RPs regardless of
-their position in ribosomes, at least in this basal state of control,
-non-demented patient brain samples (**Fig. 3A**). RP Interface Index and
-tau association can be further plotted for AD brain samples (**Fig.
-3B**) and the change in tau-RP association from control (CT) to AD brain
-(**Fig. 3C**).
+(external,
+![II &lt; 0.60](https://latex.codecogs.com/png.latex?II%20%3C%200.60 "II < 0.60")
+and internal,
+![II &gt; 0.60](https://latex.codecogs.com/png.latex?II%20%3E%200.60 "II > 0.60"))
+are not independent. This suggests that tau associates with RPs
+regardless of their position in ribosomes, at least in this basal state
+of control, non-demented patient brain samples (**Fig. 3A**). RP
+Interface Index and tau association can be further plotted for AD brain
+samples (**Fig. 3B**) and the change in tau-RP association from control
+(CT) to AD brain (**Fig. 3C**).
 
 First, the two-sample K-S test for tau-RP in AD:
 
@@ -136,25 +143,29 @@ association between AD and CT samples:
     ## alternative hypothesis: two-sided
 
 Both two-sample K-S tests reveal no significant difference between the
-0.60 *I**I* cutoff between internal and external RPs. This minimal
-association is more easily interpreted when plotted:
+0.60 ![II](https://latex.codecogs.com/png.latex?II "II") cutoff between
+internal and external RPs. This minimal association is more easily
+interpreted when plotted:
 <img src="Tau-RP-Structure_files/figure-gfm/unnamed-chunk-6-1.png" style="display: block; margin: auto;" />
 
 However, the two-sample K-S test is only as robust as the distinction
-between groups. In this biological case, the 0.60 *I**I* cutoff might
-not be a strong divider. Instead, the distribution of RP *I**I* to
-tau-RP association can be linearly regressed and tested by
-non-parametric Spearman’s test for a significant linear correlation.
-Overall, CT, AD, and AD-CT fold change of tau-RP association do not
-significantly associate with RP structural position within the ribosome.
+between groups. In this biological case, the 0.60
+![II](https://latex.codecogs.com/png.latex?II "II") cutoff might not be
+a strong divider. Instead, the distribution of RP
+![II](https://latex.codecogs.com/png.latex?II "II") to tau-RP
+association can be linearly regressed and tested by non-parametric
+Spearman’s test for a significant linear correlation. Overall, CT, AD,
+and AD-CT fold change of tau-RP association do not significantly
+associate with RP structural position within the ribosome.
 
 Spearman’s non-parametric test of correlation is used over the more
 robust Pearson’s parametric test since the variables (Interface Index
 and Tau IP intensity) are not normally distributed and some outliers
 exist. Importantly, in control brain, tau-RP association using Pearson’s
-r reveals *I**I* and Tau-IP intensity are significantly associated: *p*
-= 0.018 with a medium effect size of r = -0.37. Though, this is likely
-due to two RPs (RPS7 and RPL29) on the extrema.
+r reveals ![II](https://latex.codecogs.com/png.latex?II "II") and Tau-IP
+intensity are significantly associated: *p* = 0.018 with a medium effect
+size of r = -0.37. Though, this is likely due to two RPs (RPS7 and
+RPL29) on the extrema.
 
 Conclusions
 -----------

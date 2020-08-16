@@ -4,6 +4,7 @@ author: "Shon A. Koren"
 date: "August 10th, 2020"
 output:
   github_document:
+    pandoc_args: --webtex
 indent: no
 ---
 
