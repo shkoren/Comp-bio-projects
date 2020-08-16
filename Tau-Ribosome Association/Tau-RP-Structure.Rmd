@@ -129,7 +129,7 @@ p3a = ggstatsplot::ggscatterstats(
   label.var = Symbol,
   label.expression = (Symbol == "RPS7" | Symbol == "RPL29"),
   results.subtitle = FALSE,
-  subtitle = bquote("p = 0.180, Spearman" ~ rho ~" = -0.21"),
+  subtitle = bquote("p = 0.180, Spearman" ~ rho ~ "= -0.21"),
   marginal = FALSE,
   conf.level = 0,
   title = "Control brain",
