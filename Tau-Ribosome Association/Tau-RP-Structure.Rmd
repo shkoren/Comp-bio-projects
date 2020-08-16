@@ -15,12 +15,14 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Introduction
 This code demonstrates the relationship between human ribosomal protein (RP) position within the ribosome and association with the microtubule associated protein (MAP) tau. Recent studies have illustrated the role of tau in (dys)regulating RNA metabolism and protein synthesis (Koren et al., 2020), but little is known about why and how tau associates with RPs. To evaluate one potential guiding principle for tau associating with RPs, we can evaluate the structural position (internal or external) of any specific RP by the Interface Index ($II$). The $II$ measures the number of amino acids (AA) an RP interfaces water and rRNA, suggesting an internal and external position, respectively (Natchiar et al., 2017, Shigeoka et al., 2019).
 
+<p align="center">
 $$InterfaceIndex = \displaystyle \frac{{\sum AA}_{rRNA}}{\sum(AA_{rRNA}+AA_{water})}$$
+</p>
 We can couple the $II$ of any specific RP to its association with tau based on immunoprecipitation-coupled mass spectrometry (IP-MS) studies in the human brain to evaluate any potential bias of association.
 
 ## Most RPs are external, but a defined core of internal RPs exist.
 Internal RP proteins have more AA interfacing with rRNA than water resulting in a higher Interface Index. A common cutoff for RP structural position is 0.60 (Shigeoka et al., 2019). Plotting for the relative frequency of RP interface indices (**Fig. 1**) reveals most RPs are external rather than internal, but roughly 20% of RPs reside internally.
-
+<p align="center">
 ```{r echo=FALSE, warning = FALSE, error = FALSE, message=FALSE, fig.align = 'center'}
 #Initializing data and packages
 library(ggplot2)
@@ -40,11 +42,11 @@ p1 = ggplot(data = rp.full) + geom_histogram(aes(x = Interface, y = stat(count) 
 
 p1
 ```
-
+</p>
 ## Tau interactome data from human brain shows high RP association
 
 The most robust investigation of the tau interactome was recently published (Hsieh et al., 2019). This study used label free quantification mass spectrometry (LFQ MS) to investigate the tau interactome when immunoprecipitated from human postmortem brain tissue. Similar to other studies in models of tauopathy, Hsieh et al noted that tau associates with many RP and translational proteins and AD disease status correlates with an enhanced tau-RP association (**Fig. 2**). Notably, however, not all RPs were found due to limitations in MS depth, precluding analysis on roughly half of all RPs.
-
+<p align="center">
 ```{r echo=FALSE, warning = FALSE, error = FALSE, message=FALSE, fig.align = 'center'}
 h19f = "Hsieh2019.csv"
 h19 = as.data.frame(read.csv(h19f, as.is=TRUE,header=TRUE,sep=',', check.names=FALSE, fileEncoding="UTF-8-BOM"))
@@ -66,7 +68,7 @@ p2 = ggstatsplot::ggbetweenstats(
 ) 
 p2 + geom_hline(yintercept = 0, color = "red", linetype = "dashed", size = 1)
 ```
-
+</p>
 ## RP association with tau is unrelated to position within the ribosome
 
 Ribosomes function as molecular motors, coordinating over 100 different proteins to translate RNA at roughly 3 AA/ms. Ribosomes canonically form in the nucleolus, where rRNA and RPs associate together to form their overall quaternary structure. Ribosomes localize ubiquitously in neurons, ranging from distal dendrites to soma to axons. Over continued use throughout the neuronal lifespan, damaged or misfolded RPs require replacement by younger, undamaged variants of that RP to prevent aberrant ribosomal function. This on-site ribosome remodeling program has exciting and broad physiological implications, but remains poorly understood. Considering the depth of tau-RP association, four main hypotheses form:\
@@ -102,6 +104,7 @@ Next, the two-sample K-S test for tau-RP for the fold change in association betw
 ks.test(rp.filt.in$AD.CT.FC, rp.filt.ex$AD.CT.FC)
 ```
 Both two-sample K-S tests reveal no significant difference between the 0.60 $II$ cutoff between internal and external RPs. This minimal association is more easily interpreted when plotted:
+<p align="center">
 ```{r echo=FALSE, warning = FALSE, error = FALSE, message=FALSE,  fig.align = 'center'}
 title = ggdraw() +
   draw_label(
@@ -213,7 +216,7 @@ plot_grid(
   rel_heights = c(0.12, 2)
 )
 ```
-
+</p>
 However, the two-sample K-S test is only as robust as the distinction between groups. In this biological case, the 0.60 $II$ cutoff might not be a strong divider. Instead, the distribution of RP $II$ to tau-RP association can be linearly regressed and tested by non-parametric Spearman's test for a significant linear correlation. Overall, CT, AD, and AD-CT fold change of tau-RP association do not significantly associate with RP structural position within the ribosome. 
 
 Spearman's non-parametric test of correlation is used over the more robust Pearson's parametric test since the variables (Interface Index and Tau IP intensity) are not normally distributed and some outliers exist. Importantly, in control brain, tau-RP association using Pearson's r reveals $II$ and Tau-IP intensity are significantly associated: *p* = 0.018 with a medium effect size of r = -0.37. Though, this is likely due to two RPs (RPS7 and RPL29) on the extrema.

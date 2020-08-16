@@ -21,7 +21,11 @@ of amino acids (AA) an RP interfaces water and rRNA, suggesting an
 internal and external position, respectively (Natchiar et al., 2017,
 Shigeoka et al., 2019).
 
+<p align="center">
+
 ![InterfaceIndex = \\displaystyle \\frac{{\\sum AA}\_{rRNA}}{\\sum(AA\_{rRNA}+AA\_{water})}](https://latex.codecogs.com/png.latex?InterfaceIndex%20%3D%20%5Cdisplaystyle%20%5Cfrac%7B%7B%5Csum%20AA%7D_%7BrRNA%7D%7D%7B%5Csum%28AA_%7BrRNA%7D%2BAA_%7Bwater%7D%29%7D "InterfaceIndex = \displaystyle \frac{{\sum AA}_{rRNA}}{\sum(AA_{rRNA}+AA_{water})}")
+
+</p>
 
 We can couple the ![II](https://latex.codecogs.com/png.latex?II "II") of
 any specific RP to its association with tau based on
@@ -36,8 +40,9 @@ resulting in a higher Interface Index. A common cutoff for RP structural
 position is 0.60 (Shigeoka et al., 2019). Plotting for the relative
 frequency of RP interface indices (**Fig. 1**) reveals most RPs are
 external rather than internal, but roughly 20% of RPs reside internally.
-
+<p align="center">
 <img src="Tau-RP-Structure_files/figure-gfm/unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
+</p>
 
 Tau interactome data from human brain shows high RP association
 ---------------------------------------------------------------
@@ -51,8 +56,9 @@ tau associates with many RP and translational proteins and AD disease
 status correlates with an enhanced tau-RP association (**Fig. 2**).
 Notably, however, not all RPs were found due to limitations in MS depth,
 precluding analysis on roughly half of all RPs.
-
+<p align="center">
 <img src="Tau-RP-Structure_files/figure-gfm/unnamed-chunk-2-1.png" style="display: block; margin: auto;" />
+</p>
 
 RP association with tau is unrelated to position within the ribosome
 --------------------------------------------------------------------
@@ -146,7 +152,9 @@ Both two-sample K-S tests reveal no significant difference between the
 0.60 ![II](https://latex.codecogs.com/png.latex?II "II") cutoff between
 internal and external RPs. This minimal association is more easily
 interpreted when plotted:
+<p align="center">
 <img src="Tau-RP-Structure_files/figure-gfm/unnamed-chunk-6-1.png" style="display: block; margin: auto;" />
+</p>
 
 However, the two-sample K-S test is only as robust as the distinction
 between groups. In this biological case, the 0.60
