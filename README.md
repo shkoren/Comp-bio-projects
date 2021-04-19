@@ -1,2 +1,2 @@
-# Comp-bio-projects
- Computational biology projects for any random thoughts.
+# Tau-ribosome thoughts
+ Tau seems to associate with ribosomes. These are my random thoughts to figure out what we can learn about that.
